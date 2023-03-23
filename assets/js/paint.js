@@ -1,5 +1,5 @@
 function configureListeners() {
-    let images = document.getElementById('img'); 
+    let images = document.getElementsByTagName('img'); 
 
      for (var i = 0; i < images.length; i++) {        
         document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false);
@@ -83,10 +83,10 @@ function getProductInfo(partNumber) {
 
     function updatePrice(colorName, price)
     {       
-        let colorPrice = document.getElementById('color price');
+        let colorPrice = document.getElementById('color-price');
         colorPrice.textContent = price;
         
-        let color = document.getElementById('color name');
+        let color = document.getElementById('color-name');
         color.textContent = colorName;
     }
     
